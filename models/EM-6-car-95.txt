@@ -1,0 +1,111 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.EM -I 100 -N 6 -X 10 -max -1 -ll-cv 1.0E-6 -ll-iter 1.0E-6 -M 1.0E-6 -K 10 -num-slots 1 -S 100
+Relation:     cars-weka.filters.unsupervised.instance.Resample-S0-Z30.0-no-replacement-V
+Instances:    1210
+Attributes:   7
+              buying
+              maint
+              doors
+              persons
+              lugboot
+              safety
+Ignored:
+              class
+Test mode:    split 95% train, remainder test
+
+
+=== Clustering model (full training set) ===
+
+
+EM
+==
+
+Number of clusters: 6
+Number of iterations performed: 3
+
+
+           Cluster
+Attribute        0      1      2      3      4      5
+            (0.17) (0.15) (0.23) (0.16)  (0.1)  (0.2)
+======================================================
+buying
+  mean       2.4754 2.4975 2.5359 2.4627 2.4399 2.4976
+  std. dev.  1.1061 1.1387 1.1201 1.1354 1.0996 1.1109
+
+maint
+  mean       2.4962 2.4915   2.49 2.4819 2.4327 2.4275
+  std. dev.  1.1302 1.1391 1.1004 1.1258 1.1387 1.1151
+
+doors
+  mean       3.6529 3.3342 3.7514 3.9018 5.9986 2.9983
+  std. dev.  1.4413  1.233 1.4572 1.5127 0.0522   0.83
+
+persons
+  mean            2 4.4975 4.3988      2 4.4963 4.4626
+  std. dev.       0    0.5  0.704  1.244    0.5 0.4986
+
+lugboot
+  mean       1.9573 2.8669 1.9963 1.9936 1.7984 1.4692
+  std. dev.  0.8217 0.3398 0.8083 0.8461 0.7752 0.5177
+
+safety
+  mean       2.6967 2.5607      1 1.3334 2.4915 2.5125
+  std. dev.  0.4618 0.4963 0.8289 0.4741 0.5029 0.4998
+
+
+
+Time taken to build model (full training data) : 0.15 seconds
+
+=== Model and evaluation on test split ===
+
+EM
+==
+
+Number of clusters: 6
+Number of iterations performed: 4
+
+
+           Cluster
+Attribute        0      1      2      3      4      5
+            (0.25) (0.12) (0.04) (0.23)  (0.2) (0.15)
+======================================================
+buying
+  mean       2.4482 2.4184 2.6199 2.4926 2.4999 2.5088
+  std. dev.  1.1278 1.1055 1.1098 1.1107 1.0956 1.1512
+
+maint
+  mean       2.5114 2.4396 2.5044 2.3815 2.5572 2.4808
+  std. dev.  1.1354 1.1196 1.1139  1.092 1.1271 1.1206
+
+doors
+  mean        3.756 3.7732 3.8039 3.7689 3.7696 3.7509
+  std. dev.   1.471 1.5082 1.4834 1.4866 1.4806 1.4708
+
+persons
+  mean            2 3.6471      2 4.5172 4.4761 4.4737
+  std. dev.  1.2434 1.2322 1.2434 0.4997 0.4994 0.4993
+
+lugboot
+  mean       2.2862      1 1.0015 2.6279 1.3383 2.5384
+  std. dev.  0.7207      0 0.0387 0.4912 0.4782 0.4985
+
+safety
+  mean       1.9535      3 1.3899 1.4913 1.4994 2.9999
+  std. dev.  0.8024 0.8262 0.4879 0.5093 0.5038   0.01
+
+
+
+Time taken to build model (percentage split) : 0.21 seconds
+
+Clustered Instances
+
+0      14 ( 23%)
+1      26 ( 43%)
+3      10 ( 16%)
+4       2 (  3%)
+5       9 ( 15%)
+
+
+Log likelihood: -3.85003
+

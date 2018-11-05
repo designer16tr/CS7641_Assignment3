@@ -1,0 +1,10 @@
+# http://jamesmarquezportfolio.com/correlation_matrices_in_r.html
+install.packages("PerformanceAnalytics")
+
+# eliminate class
+ndata = rdata[1:11]
+
+library(PerformanceAnalytics)
+chart.Correlation(ndata, histogram=TRUE, pch=19)
+pdf("C:/Users/Aydin/Desktop/GaTech/CS7641/Assignments/Assignment3/wine_corr.pdf")
+dev.off()

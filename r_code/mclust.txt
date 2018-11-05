@@ -1,0 +1,16 @@
+# https://cran.r-project.org/web/packages/mclust/vignettes/mclust.html
+
+library(mclust)
+
+ndata = rdata[,1:11]
+data(ndata)
+
+class <- rdata$class
+clPairs(ndata, class)
+BIC <- mclustBIC(ndata)
+plot(BIC)
+mod1 <- Mclust(ndata, x = BIC)
+plot(mod1, what = "classification")
+
+pdf("C:/Users/Aydin/Desktop/GaTech/CS7641/Assignments/Assignment3/wine-BIC.pdf")
+dev.off()

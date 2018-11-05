@@ -1,0 +1,76 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.EM -I 100 -N 9 -X 10 -max -1 -ll-cv 1.0E-6 -ll-iter 1.0E-6 -M 1.0E-6 -K 10 -num-slots 1 -S 100
+Relation:     cars-weka.filters.unsupervised.instance.Resample-S0-Z30.0-no-replacement-V
+Instances:    1210
+Attributes:   7
+              buying
+              maint
+              doors
+              persons
+              lugboot
+              safety
+Ignored:
+              class
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+EM
+==
+
+Number of clusters: 9
+Number of iterations performed: 4
+
+
+           Cluster
+Attribute        0      1      2      3      4      5      6      7      8
+            (0.08) (0.12) (0.11) (0.14) (0.14) (0.15) (0.08)  (0.1) (0.08)
+===========================================================================
+buying
+  mean        3.468 1.4588  2.471 2.4475 2.4564 2.4072  3.535 2.4927 2.4184
+  std. dev.  0.5883 0.5144 1.1433  1.087 1.1058 1.0868 0.5441 1.0999 1.1105
+
+maint
+  mean       2.3532 2.3683 2.4855 2.4385 2.4587 2.4309 2.6742 2.5285  2.625
+  std. dev.  1.0825 1.0975 1.1244 1.1186 1.1418 1.1261 1.1049 1.1125 1.1423
+
+doors
+  mean       2.9886 2.9353 3.8551 5.8753 3.7224 3.5786 2.9305 3.6339 3.1398
+  std. dev.  0.8212 0.8208 1.5111 0.4873 1.4341   1.36 0.8173 1.4523  0.949
+
+persons
+  mean       4.5414 4.4853      2 4.5104  2.186 4.4747 4.4922 2.1851 4.5114
+  std. dev.  0.4983 0.4999  1.244 0.4999 0.6202 0.4994    0.5 0.6164 0.4999
+
+lugboot
+  mean       2.4886 2.6013 1.9928 2.1491 2.5256 1.2086 2.5169 1.2018 1.2692
+  std. dev.  0.5324 0.5159  0.847 0.7736 0.5409  0.459 0.5417 0.4528 0.4441
+
+safety
+  mean       1.3262 2.0844      1 1.9151 2.5617 2.5362  2.664 2.5056      1
+  std. dev.  0.4726 0.8011 0.8289 0.8179 0.4979 0.5386 0.4765 0.5033      0
+
+
+
+Time taken to build model (full training data) : 0.34 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0        36 (  3%)
+1       123 ( 10%)
+2       114 (  9%)
+3       155 ( 13%)
+4       171 ( 14%)
+5       142 ( 12%)
+6       102 (  8%)
+7        96 (  8%)
+8       271 ( 22%)
+
+
+Log likelihood: -6.91431
+

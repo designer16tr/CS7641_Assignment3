@@ -1,0 +1,17 @@
+vhigh = 4
+high = 3
+med = 2
+low = 1
+
+5more = 6
+
+more = 5
+
+big = 3
+med = 2
+small = 1
+
+unacc = 1
+acc = 2
+good = 3
+vgood = 4

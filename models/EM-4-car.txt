@@ -1,0 +1,71 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.EM -I 100 -N 4 -X 10 -max -1 -ll-cv 1.0E-6 -ll-iter 1.0E-6 -M 1.0E-6 -K 10 -num-slots 1 -S 100
+Relation:     cars-weka.filters.unsupervised.instance.Resample-S0-Z30.0-no-replacement-V
+Instances:    1210
+Attributes:   7
+              buying
+              maint
+              doors
+              persons
+              lugboot
+              safety
+Ignored:
+              class
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+EM
+==
+
+Number of clusters: 4
+Number of iterations performed: 3
+
+
+           Cluster
+Attribute        0      1      2      3
+            (0.25) (0.16) (0.33) (0.26)
+========================================
+buying
+  mean       2.5411 2.4575 2.4716 2.4909
+  std. dev.  1.1128 1.1361  1.121 1.1124
+
+maint
+  mean       2.4895 2.4701 2.4889 2.4345
+  std. dev.  1.1023 1.1441 1.1279 1.1193
+
+doors
+  mean       3.7815 3.6991 3.7457 3.7984
+  std. dev.    1.47 1.4872 1.4731 1.4921
+
+persons
+  mean       4.5066 4.5119      2 4.4598
+  std. dev.     0.5 0.4999      0 0.4984
+
+lugboot
+  mean       1.9878 2.9339 1.9753 1.4516
+  std. dev.  0.7838 0.2485 0.8341  0.505
+
+safety
+  mean       1.1226 2.5405 2.0123 2.5514
+  std. dev.   0.328 0.5258 0.8329 0.5123
+
+
+
+Time taken to build model (full training data) : 0.09 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       269 ( 22%)
+1       180 ( 15%)
+2       405 ( 33%)
+3       356 ( 29%)
+
+
+Log likelihood: -4.12814
+

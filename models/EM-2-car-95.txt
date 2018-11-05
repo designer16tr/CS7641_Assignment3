@@ -1,0 +1,108 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.EM -I 100 -N 2 -X 10 -max -1 -ll-cv 1.0E-6 -ll-iter 1.0E-6 -M 1.0E-6 -K 10 -num-slots 1 -S 100
+Relation:     cars-weka.filters.unsupervised.instance.Resample-S0-Z30.0-no-replacement-V
+Instances:    1210
+Attributes:   7
+              buying
+              maint
+              doors
+              persons
+              lugboot
+              safety
+Ignored:
+              class
+Test mode:    split 95% train, remainder test
+
+
+=== Clustering model (full training set) ===
+
+
+EM
+==
+
+Number of clusters: 2
+Number of iterations performed: 2
+
+
+           Cluster
+Attribute        0      1
+            (0.34) (0.66)
+==========================
+buying
+  mean       2.4714 2.5022
+  std. dev.  1.1209 1.1186
+
+maint
+  mean       2.4884 2.4634
+  std. dev.  1.1277 1.1191
+
+doors
+  mean       3.7453 3.7693
+  std. dev.  1.4733 1.4832
+
+persons
+  mean       2.0286  4.493
+  std. dev.  0.2377    0.5
+
+lugboot
+  mean       1.9749 1.9979
+  std. dev.  0.8338  0.816
+
+safety
+  mean       2.0125 2.0148
+  std. dev.  0.8327 0.8265
+
+
+
+Time taken to build model (full training data) : 0.04 seconds
+
+=== Model and evaluation on test split ===
+
+EM
+==
+
+Number of clusters: 2
+Number of iterations performed: 2
+
+
+           Cluster
+Attribute        0      1
+            (0.34) (0.66)
+==========================
+buying
+  mean       2.4689 2.4877
+  std. dev.  1.1199 1.1174
+
+maint
+  mean       2.5076 2.4612
+  std. dev.  1.1271 1.1168
+
+doors
+  mean       3.7523 3.7715
+  std. dev.  1.4787 1.4832
+
+persons
+  mean       2.0285 4.4924
+  std. dev.  0.2373    0.5
+
+lugboot
+  mean       1.9736 2.0149
+  std. dev.  0.8348 0.8171
+
+safety
+  mean       2.0135 2.0168
+  std. dev.  0.8274 0.8251
+
+
+
+Time taken to build model (percentage split) : 0.05 seconds
+
+Clustered Instances
+
+0      21 ( 34%)
+1      40 ( 66%)
+
+
+Log likelihood: -8.34176
+

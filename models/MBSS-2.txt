@@ -1,0 +1,67 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 2 -A "weka.core.ManhattanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     wine-weka.filters.unsupervised.instance.Resample-S0-Z30.0-no-replacement-V
+Instances:    3429
+Attributes:   12
+              fixedacid
+              volacid
+              citricacid
+              residualsugar
+              chlorides
+              freesulfur
+              totalsulfur
+              density
+              pH
+              sulphates
+              alcohol
+Ignored:
+              class
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 9
+Sum of within cluster distances: 2473.3726426002286
+
+Initial starting points (random):
+
+Cluster 0: 7,0.27,0.32,6.8,0.047,47,193,0.9938,3.23,0.39,11.4
+Cluster 1: 6.8,0.27,0.49,1.2,0.044,35,126,0.99,3.13,0.48,12.1
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                             Cluster#
+Attribute        Full Data          0          1
+                  (3429.0)   (1643.0)   (1786.0)
+================================================
+fixedacid              6.8        6.8        6.7
+volacid               0.26       0.26       0.26
+citricacid            0.32       0.32       0.32
+residualsugar          5.2        9.2        2.2
+chlorides            0.043      0.048      0.037
+freesulfur              34         41         29
+totalsulfur            134        162        114
+density             0.9938     0.9962     0.9918
+pH                    3.18       3.16        3.2
+sulphates             0.47       0.49       0.46
+alcohol               10.4        9.5       11.3
+
+
+
+
+Time taken to build model (full training data) : 0.16 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0      1643 ( 48%)
+1      1786 ( 52%)
+

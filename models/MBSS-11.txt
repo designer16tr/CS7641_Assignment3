@@ -1,0 +1,85 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 11 -A "weka.core.ManhattanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     wine-weka.filters.unsupervised.instance.Resample-S0-Z30.0-no-replacement-V
+Instances:    3429
+Attributes:   12
+              fixedacid
+              volacid
+              citricacid
+              residualsugar
+              chlorides
+              freesulfur
+              totalsulfur
+              density
+              pH
+              sulphates
+              alcohol
+Ignored:
+              class
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 31
+Sum of within cluster distances: 1925.7499165612865
+
+Initial starting points (random):
+
+Cluster 0: 7,0.27,0.32,6.8,0.047,47,193,0.9938,3.23,0.39,11.4
+Cluster 1: 6.8,0.27,0.49,1.2,0.044,35,126,0.99,3.13,0.48,12.1
+Cluster 2: 6.8,0.21,0.31,2.9,0.046,40,121,0.9913,3.07,0.65,10.9
+Cluster 3: 6.6,0.3,0.25,8,0.036,21,124,0.99362,3.06,0.38,10.8
+Cluster 4: 6.8,0.41,0.3,8.8,0.045,28,131,0.9953,3.12,0.59,9.9
+Cluster 5: 7,0.15,0.28,14.7,0.051,29,149,0.99792,2.96,0.39,9
+Cluster 6: 5.9,0.17,0.28,0.7,0.027,5,28,0.98985,3.13,0.32,10.6
+Cluster 7: 6.2,0.36,0.26,13.2,0.051,54,201,0.9976,3.25,0.46,9
+Cluster 8: 6.3,0.37,0.28,6.3,0.034,45,152,0.9921,3.29,0.46,11.6
+Cluster 9: 6.6,0.37,0.07,1.4,0.048,58,144,0.9922,3.17,0.38,10
+Cluster 10: 6.3,0.19,0.32,2.8,0.046,18,80,0.99043,2.92,0.47,11.05
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                             Cluster#
+Attribute        Full Data          0          1          2          3          4          5          6          7          8          9         10
+                  (3429.0)    (305.0)    (374.0)    (186.0)    (275.0)    (299.0)    (379.0)    (377.0)    (415.0)    (217.0)    (284.0)    (318.0)
+===================================================================================================================================================
+fixedacid              6.8        6.6        6.6        6.9        7.6        6.6        7.2        6.1        6.8        6.5        6.8        7.2
+volacid               0.26        0.2       0.28        0.2       0.29       0.28       0.23       0.23       0.29       0.32       0.33       0.21
+citricacid            0.32       0.29       0.31       0.35       0.32       0.29       0.36        0.3       0.36       0.31       0.26       0.36
+residualsugar          5.2        5.6        2.5          2       7.25        7.3      14.35        1.8       10.4        3.2        2.5        1.7
+chlorides            0.043      0.047      0.034     0.0445      0.036      0.046       0.05      0.038      0.048      0.033      0.052       0.04
+freesulfur              34         40         30         40         28         36         41         28         54         29         23         25
+totalsulfur            134        137        109        136        124        168        156        116        195        105        124        107
+density             0.9938     0.9942     0.9902     0.9934     0.9937     0.9954     0.9983     0.9923     0.9969     0.9906     0.9941     0.9917
+pH                    3.18       3.21       3.19        3.2       3.05       3.29       3.06       3.35       3.16       3.25       3.13       3.09
+sulphates             0.47        0.4       0.39        0.7       0.37       0.57       0.46       0.48        0.5        0.6       0.45       0.52
+alcohol               10.4         10       12.4       10.4       10.9         10          9       10.8        9.4       12.5        9.4       11.2
+
+
+
+
+Time taken to build model (full training data) : 0.21 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+ 0       305 (  9%)
+ 1       374 ( 11%)
+ 2       186 (  5%)
+ 3       275 (  8%)
+ 4       299 (  9%)
+ 5       379 ( 11%)
+ 6       377 ( 11%)
+ 7       415 ( 12%)
+ 8       217 (  6%)
+ 9       284 (  8%)
+10       318 (  9%)
+

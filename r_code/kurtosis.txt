@@ -1,0 +1,9 @@
+# https://rdrr.io/rforge/PerformanceAnalytics/man/kurtosis.html
+
+# eliminate column 12 in wine data
+ndata <- rdata[1:11]
+
+library(PerformanceAnalytics)
+
+# kurtosis(ndata, na.rm = FALSE, method = c("excess", "moment", "fisher",  "sample", "sample_excess"))
+kurtosis(ndata, na.rm = FALSE, method = "excess")

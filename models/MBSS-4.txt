@@ -1,0 +1,71 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 4 -A "weka.core.ManhattanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     wine-weka.filters.unsupervised.instance.Resample-S0-Z30.0-no-replacement-V
+Instances:    3429
+Attributes:   12
+              fixedacid
+              volacid
+              citricacid
+              residualsugar
+              chlorides
+              freesulfur
+              totalsulfur
+              density
+              pH
+              sulphates
+              alcohol
+Ignored:
+              class
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 13
+Sum of within cluster distances: 2230.9059214164863
+
+Initial starting points (random):
+
+Cluster 0: 7,0.27,0.32,6.8,0.047,47,193,0.9938,3.23,0.39,11.4
+Cluster 1: 6.8,0.27,0.49,1.2,0.044,35,126,0.99,3.13,0.48,12.1
+Cluster 2: 6.8,0.21,0.31,2.9,0.046,40,121,0.9913,3.07,0.65,10.9
+Cluster 3: 6.6,0.3,0.25,8,0.036,21,124,0.99362,3.06,0.38,10.8
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                             Cluster#
+Attribute        Full Data          0          1          2          3
+                  (3429.0)   (1013.0)    (845.0)    (866.0)    (705.0)
+======================================================================
+fixedacid              6.8        6.9        6.6        6.8        6.9
+volacid               0.26       0.27       0.29       0.22       0.27
+citricacid            0.32       0.34       0.31       0.32       0.28
+residualsugar          5.2         12        2.7          2          5
+chlorides            0.043      0.048      0.034      0.043      0.044
+freesulfur              34         47         29         31         27
+totalsulfur            134        176        109        131        122
+density             0.9938     0.9974     0.9907      0.993      0.994
+pH                    3.18       3.14       3.19       3.25       3.14
+sulphates             0.47       0.49       0.43       0.55        0.4
+alcohol               10.4        9.3       12.2       10.6         10
+
+
+
+
+Time taken to build model (full training data) : 0.05 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0      1013 ( 30%)
+1       845 ( 25%)
+2       866 ( 25%)
+3       705 ( 21%)
+

@@ -1,0 +1,77 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 7 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     wine-weka.filters.unsupervised.instance.Resample-S0-Z30.0-no-replacement-V
+Instances:    3429
+Attributes:   12
+              fixedacid
+              volacid
+              citricacid
+              residualsugar
+              chlorides
+              freesulfur
+              totalsulfur
+              density
+              pH
+              sulphates
+              alcohol
+Ignored:
+              class
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 19
+Within cluster sum of squared errors: 230.88659505674553
+
+Initial starting points (random):
+
+Cluster 0: 7,0.27,0.32,6.8,0.047,47,193,0.9938,3.23,0.39,11.4
+Cluster 1: 6.8,0.27,0.49,1.2,0.044,35,126,0.99,3.13,0.48,12.1
+Cluster 2: 6.8,0.21,0.31,2.9,0.046,40,121,0.9913,3.07,0.65,10.9
+Cluster 3: 6.6,0.3,0.25,8,0.036,21,124,0.99362,3.06,0.38,10.8
+Cluster 4: 6.8,0.41,0.3,8.8,0.045,28,131,0.9953,3.12,0.59,9.9
+Cluster 5: 7,0.15,0.28,14.7,0.051,29,149,0.99792,2.96,0.39,9
+Cluster 6: 5.9,0.17,0.28,0.7,0.027,5,28,0.98985,3.13,0.32,10.6
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                             Cluster#
+Attribute        Full Data          0          1          2          3          4          5          6
+                  (3429.0)    (437.0)    (532.0)    (274.0)    (584.0)    (471.0)    (564.0)    (567.0)
+=======================================================================================================
+fixedacid           6.8676     6.3474     6.5723     6.9064     7.4173     6.9435     7.1323     6.6343
+volacid             0.2781     0.2401     0.3213      0.231     0.2625      0.353     0.2599     0.2617
+citricacid          0.3349     0.3099     0.3254     0.3527     0.3475     0.3377     0.3993     0.2751
+residualsugar       6.4058      3.739     4.1423      3.529     4.5677     9.2626    11.5222     6.4056
+chlorides           0.0456     0.0418     0.0339     0.0403     0.0392     0.0522     0.0579     0.0507
+freesulfur         35.3199    32.6487    30.3853    33.7536    27.9846    45.4873    44.5771    32.6667
+totalsulfur       138.1464   130.5526   111.5977   122.5274   115.9966   188.0074   166.3183   129.8289
+density              0.994     0.9931     0.9906     0.9925     0.9926     0.9966     0.9972     0.9949
+pH                  3.1852     3.3973     3.2111     3.1828     3.0821     3.2104     3.0521     3.2166
+sulphates           0.4897     0.5176     0.4493     0.7062     0.4196     0.5699     0.4658     0.4309
+alcohol            10.5106    10.7569    12.4926    11.1383     11.043     9.5902     9.2007      9.677
+
+
+
+
+Time taken to build model (full training data) : 0.07 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       437 ( 13%)
+1       532 ( 16%)
+2       274 (  8%)
+3       584 ( 17%)
+4       471 ( 14%)
+5       564 ( 16%)
+6       567 ( 17%)
+

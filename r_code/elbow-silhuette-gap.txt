@@ -1,0 +1,21 @@
+# https://www.datanovia.com/en/lessons/determining-the-optimal-number-of-clusters-3-must-know-methods/
+# http://www.sthda.com/english/wiki/print.php?id=239
+
+library(factoextra)
+library(NbClust)
+
+# eliminate column 12 in wine data
+ndata = rdata[1:11]
+
+# elbow method
+fviz_nbclust(ndata, kmeans, method = "wss") + geom_vline(xintercept = 4, linetype = 2) + labs(subtitle = "Elbow method")
+
+# silhuette method
+fviz_nbclust(ndata, kmeans, method = "silhouette") + labs(subtitle = "Silhouette method")
+
+# gap statistic
+set.seed(123)
+fviz_nbclust(ndata, kmeans, nstart = 25,  method = "gap_stat", nboot = 50) + labs(subtitle = "Gap statistic method")
+
+pdf("C:/Users/Aydin/Desktop/GaTech/CS7641/Assignments/Assignment3/elbow.pdf")
+dev.off()

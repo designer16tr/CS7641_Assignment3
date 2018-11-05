@@ -1,0 +1,109 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.EM -I 100 -N 3 -X 10 -max -1 -ll-cv 1.0E-6 -ll-iter 1.0E-6 -M 1.0E-6 -K 10 -num-slots 1 -S 100
+Relation:     cars-weka.filters.unsupervised.instance.Resample-S0-Z30.0-no-replacement-V
+Instances:    1210
+Attributes:   7
+              buying
+              maint
+              doors
+              persons
+              lugboot
+              safety
+Ignored:
+              class
+Test mode:    split 95% train, remainder test
+
+
+=== Clustering model (full training set) ===
+
+
+EM
+==
+
+Number of clusters: 3
+Number of iterations performed: 2
+
+
+           Cluster
+Attribute        0      1      2
+             (0.3) (0.36) (0.34)
+=================================
+buying
+  mean       2.5281 2.4809 2.4712
+  std. dev.  1.1094 1.1259 1.1207
+
+maint
+  mean       2.4819 2.4486 2.4878
+  std. dev.  1.1066 1.1292 1.1277
+
+doors
+  mean       3.8053 3.7398  3.745
+  std. dev.  1.4838 1.4821 1.4732
+
+persons
+  mean       4.5036 4.4846 2.0305
+  std. dev.     0.5 0.4998 0.2456
+
+lugboot
+  mean       1.9749 2.0172 1.9747
+  std. dev.  0.8044  0.825 0.8338
+
+safety
+  mean       1.2643 2.6379 2.0125
+  std. dev.  0.4421  0.485 0.8307
+
+
+
+Time taken to build model (full training data) : 0.08 seconds
+
+=== Model and evaluation on test split ===
+
+EM
+==
+
+Number of clusters: 3
+Number of iterations performed: 2
+
+
+           Cluster
+Attribute        0      1      2
+            (0.34) (0.31) (0.35)
+=================================
+buying
+  mean       2.4687 2.5124 2.4655
+  std. dev.  1.1198  1.108 1.1255
+
+maint
+  mean       2.5073 2.5197 2.4086
+  std. dev.  1.1273 1.1071 1.1227
+
+doors
+  mean       3.7517 3.7796 3.7649
+  std. dev.  1.4787 1.4707 1.4943
+
+persons
+  mean        2.031 4.5192 4.4688
+  std. dev.  0.2476 0.4997 0.4991
+
+lugboot
+  mean       1.9735 2.0284 2.0027
+  std. dev.  0.8348 0.8067 0.8262
+
+safety
+  mean        2.013 1.3017 2.6638
+  std. dev.  0.8254 0.4611 0.4758
+
+
+
+Time taken to build model (percentage split) : 0.06 seconds
+
+Clustered Instances
+
+0      21 ( 34%)
+1      16 ( 26%)
+2      24 ( 39%)
+
+
+Log likelihood: -8.27994
+
